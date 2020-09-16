@@ -1,0 +1,24 @@
+<h2>ReactiveFormsModule</h2>
+<mat-card>
+  <mat-card-title> Registration form </mat-card-title>
+  <form novalidate [formGroup]="form">
+    <input formControlName="first" placeholder="First name" />
+    <input formControlName="last" placeholder="Last name" />
+    <div formGroupName="account">
+      <label>Account</label>
+      <input formControlName="username" placeholder="Username" />
+      <input formControlName="password" placeholder="Password" />
+      <input formControlName="confirm" placeholder="Confirm password" />
+    </div>
+    <label>Would you like to receive a newsletter?</label>
+    <switch-control formControlName="newsletter"></switch-control>
+    <mat-card-actions align="end">
+      <button mat-button>SUBMIT</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
+<mat-card>
+  <p>Form: {{ form.value | json }}</p>
+  <p>Form status: {{ form.status }}</p>
+  <p>Account status: {{ form.get("account").errors | json }}</p>
+</mat-card>
