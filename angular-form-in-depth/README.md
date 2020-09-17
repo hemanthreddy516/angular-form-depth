@@ -1,5 +1,19 @@
 # AngularFormInDepth
 
+## Angular Forms
+
+This project contains both Template driven and reactive forms in Angular.
+
+## Custom Form control and Validator
+
+In addition one custom form control implemented using ControlValueAccessor interface from @angular/forms and Custom Validator.
+
+
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
 ## Development server
