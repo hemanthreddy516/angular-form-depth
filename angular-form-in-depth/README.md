@@ -9,7 +9,7 @@ This project contains both Template driven and reactive forms in Angular.
 In addition one custom form control implemented using ControlValueAccessor interface from @angular/forms and Custom Validator.
 
 
-
+referance : https://medium.com/@lukaonik/how-to-write-custom-form-controls-in-angular-1285ed00bba0
 
 
 
